@@ -1,52 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta content="notranslate" name="google">
-	<base href="">
-	<title>Raster Games :: Game On!</title>
-	<meta content="ie=edge" http-equiv="x-ua-compatible">
-	<meta content="en-US" http-equiv="content-language">
-	<meta content="Copyright 2016-2017. Raster Games." name="copyright">
-	<meta content="text/html; charset=utf-8" http-equiv="content-type">
-	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1.0" name="viewport">
-	<link href="images/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
-	<link href="images/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
-	<link href="images/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-	<link href="images/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-	<link href="images/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-	<link href="images/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-	<link href="images/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
-	<link href="images/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-	<link href="images/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
-	<link href="images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-	<link href="images/favicon/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
-	<link href="images/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
-	<link href="images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-	<link href="images/favicon/manifest.json" rel="manifest">
-	<link href="images/favicon/safari-pinned-tab.svg" rel="mask-icon">
-	<meta content="#ffffff" name="msapplication-TileColor">
-	<meta content="/mstile-144x144.png" name="msapplication-TileImage">
-	<meta content="#ffffff" name="theme-color">
-	<meta content="Raster Games - Game On" name="Description">
-	<meta content="raster games, videogames, android, ios" name="Keywords">
-	<meta content="Raster Games" property="og:site_name">
-	<meta content="www.rastergames.com/" property="og:url">
-	<meta content="Raster Games - Game On" property="og:description">
-	<meta content="website" property="og:type">
-	<style>
-		body { text-align: center; padding: 150px; }
-		h1 { font-size: 50px; }
-		body { font: 20px Helvetica, sans-serif; color: #333; }
-		article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-		a { color: #dc8100; text-decoration: none; }
-		a:hover { color: #333; text-decoration: none; }
-	</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Raster Games</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/xn-desktop-light.css">
+	<link rel="stylesheet" href="css/flexbox-grid.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/menu.css"> 
+	<link rel="stylesheet" href="fonts/stylesheet.css"> 
+	<link rel="stylesheet" href="css/progress-circle.css"> 
 </head>
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:&#114;&#97;&#115;&#116;&#101;&#114;&#103;&#97;&#109;&#101;&#115;&#64;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
-        <p>&mdash; The Team</p>
-    </div>
-</article>
-<script src="https://rastergames.glitch.me/counter.php"></script>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row" id="menu">
+				<div class="col-auto"></div>
+				<div class="col-xs-12 col-md-10 col-lg-8">
+					<nav>
+						<ul class="primary">
+							<li class="mobile"> <a href="#"><img src="images/logo-live.png" /></a>
+								<div class="hamburger hamburger--elastic" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+									<div class="hamburger-box">
+										<div class="hamburger-inner"></div>
+									</div>
+								</div>
+							</li>
+							<li class="active"> <a href="javascript:void(0)">Home <span class="caret"></span><span class="label">welcome</span></a>
+								<ul class="sub">
+									<li> <a href="">Blog<span class="label">news</span></a> </li>
+								</ul>	
+							</li>
+							<li> <a href="javascript:void(0)">Games <span class="caret"></span><span class="label">play</span></a>
+								<ul class="sub">
+									<li> <a href="">Action</a> </li>
+									<li> <a href="">Multiplayer</a> </li>
+									<li> <a href="">Strategy</a> </li>
+									<li> <a href="">MMO</a> </li>
+								</ul>
+							</li>
+							<li> <a href="">Community<span class="label">forums</span></a> </li>							
+							<li> <a href="">Account<span class="label">register</span></a> </li>							
+							<li class="search">
+								<div class="widget-container">
+									<div class="search-toggle closed">
+										<button class="search-icon icon-search"><i class="fa fa-fw fa-search"></i></button>
+										<button class="search-icon icon-close"><i class="fa fa-fw fa-close"></i></button>
+									</div>
+									<div class="search-container">
+										<form>
+											<input id="search-terms" name="q" placeholder="Search terms…" type="text">
+											<button class="search-icon" name="submit" type="submit" value="Go"><i class="fa fa-fw fa-search"></i></button>
+										</form>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-auto"></div>
+			</div>
+			<div class="row crossfade" id="main-header">
+				<div class="col-lg-12 slide">
+					<div class="row">
+						<div class="col-auto"></div>
+						<div class="col-lg-4"></div>
+						<div class="col-lg-4">
+							<h2>Madden 25</h2>
+							<p>Wii U Game of The Year 2013 Winner</p>
+							<div class="progressbar">
+  							<div class="progress progress1"></div>
+							</div>
+						</div>						
+						<div class="col-auto"></div>
+					</div>
+				</div>
+				<div class="col-lg-12 slide">
+					<div class="row">
+						<div class="col-auto"></div>
+						<div class="col-lg-4"></div>
+						<div class="col-lg-4">
+							<h2>FIFA 2020</h2>
+							<p>Soccer Game of The Year</p>
+							<div class="progressbar">
+  							<div class="progress progress2"></div>
+							</div>							
+						</div>						
+						<div class="col-auto"></div>
+					</div>
+				</div>
+				<div class="col-lg-12 slide">
+					<div class="row">
+						<div class="col-auto"></div>
+						<div class="col-lg-4"></div>
+						<div class="col-lg-4">
+							<h2>NEED4SPEED</h2>
+							<p>Coming This Fall 2018</p>
+							<div class="progressbar">
+  							<div class="progress progress3"></div>
+							</div>							
+						</div>						
+						<div class="col-auto"></div>
+					</div>
+				</div>
+				<div class="col-lg-12 slide">
+					<div class="row">
+						<div class="col-auto"></div>	
+						<div class="col-lg-4"></div>
+						<div class="col-lg-4">
+							<h2>HEXGL</h2>
+							<p>Futuristic HTML5 Racing Game</p>
+							<div class="progressbar">
+  							<div class="progress progress4"></div>
+							</div>							
+						</div>						
+						<div class="col-auto"></div>
+					</div>
+				</div>
+				<div class="col-lg-12 slide">
+					<div class="row">
+						<div class="col-auto"></div>
+						<div class="col-lg-4"></div>
+						<div class="col-lg-4">
+							<h2>SPACEWAR</h2>
+							<p>Play For Free!</p>
+							<div class="progressbar">
+  							<div class="progress progress5"></div>
+							</div>							
+						</div>						
+						<div class="col-auto"></div>
+					</div>
+				</div>									
+			</div>			
+		</div>
+	</header>
+	<section id="ticker">
+		<div class="container">
+		
+		<div class="row">
+		<div class="col-auto"></div>
+		<div class="col-lg-8">
+
+			<div class="row">
+				<div class="col-lg-4 col-md-4 ticker-item"> 
+					<div class="row">
+						<div class="col-xs-3"><img src="images/jump.webp" width="100" height="100" /></div> 
+						<div class="col-xs-7"><h3>HTML High Five</h3><p>We're back and will be bringing web and HTML5 games!</p></div> 
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 ticker-item"> 
+					<div class="row">
+						<div class="col-xs-3"><img src="images/soldier.webp" width="100" height="100" /></div> 
+						<div class="col-xs-7"><h3>Take Your Pick</h3><p>FPS, Action, Adventure and the more genres!</p></div> 
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 ticker-item"> 
+					<div class="row">
+						<div class="col-xs-3"><img src="images/smartphone.webp" width="100" height="100" /></div> 
+						<div class="col-xs-7"><h3>Mobile Fun</h3><p>From thrilling shooters to fighting games and puzzlers!</p></div> 
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<div class="col-auto"></div>		
+		</div>
+		
+		</div>
+	</section>	
+
+	<!-- Main Content -->
+	
+	<section id="main" class="row container">
+		<div class="col-auto"></div>
+		<section class="col-lg-6">
+
+<ul class="tabs">
+	<li class="tab-link current" data-tab="tab-1">Popular Games</li>
+	<li class="tab-link" data-tab="tab-2">New Games</li>
+</ul>
+<div class="row tab-content showcase current" id="tab-1">
+	<div class="col-lg-4">
+		<div class="row">
+			<div class="col-lg-12">
+				<img class="thumb" src="images/thumb2.jpg">
+				<h3>Excepteur sint occaecat</h3>
+				<div class="rating">
+					<div class="progress-circle over50 p92">
+						<span>92<i>%</i></span>
+						<div class="left-half-clipper">
+							<div class="first50-bar"></div>
+							<div class="value-bar"></div>
+						</div>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum, libero id imperdiet elementum, nunc quam...</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-4">
+		<div class="row">
+			<div class="col-lg-12">
+				<img class="thumb" src="images/thumb3.jpg">
+				<h3>Ut enim ad minim veniam</h3>
+				<div class="rating">
+					<div class="progress-circle over50 p76">
+						<span>76<i>%</i></span>
+						<div class="left-half-clipper">
+							<div class="first50-bar"></div>
+							<div class="value-bar"></div>
+						</div>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum, libero id imperdiet elementum, nunc quam...</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-4">
+		<div class="row">
+			<div class="col-lg-12">
+				<img class="thumb" src="images/thumb4.jpg">
+				<h3>Hungry Hero</h3>
+				<div class="rating">
+					<div class="progress-circle p40">
+						<span>40<i>%</i></span>
+						<div class="left-half-clipper">
+							<div class="first50-bar"></div>
+							<div class="value-bar"></div>
+						</div>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum, libero id imperdiet elementum, nunc quam...</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row tab-content showcase" id="tab-2">
+	<div class="col-lg-12">
+			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>			
+</div>
+<div class="row" id="more">
+	<div class="col-lg-3">
+		<h3>Ut enim ad minim veniam</h3>
+	</div>
+	<div class="col-lg-3">
+		<h3>Ut enim ad minim veniam</h3>
+	</div>
+	<div class="col-lg-3">
+		<h3>Ut enim ad minim veniam</h3>
+	</div>
+	<div class="col-lg-3">
+		<h3>Ut enim ad minim veniam</h3>
+	</div>			
+</div>
+
+
+
+
+
+			
+		</section>
+		<aside class="col-lg-2 col-xs-12">			
+
+
+<div class="fragment-widget" id="coming-soon">
+	<h3>Coming Soon</h3>
+	<div>
+		<div class="arrowbox arrowbox-right">
+			<i class="arrow-before"></i><i class="arrow-after"></i>
+			<div class="arrowbox-main">
+				<p></p>
+			</div>
+		</div>
+		<div class="content">
+			<h3>Lipsum Lorem</h3>
+			<p>December 10, 2018</p>
+		</div>
+	</div>
+	<div>
+		<div class="arrowbox arrowbox-right">
+			<i class="arrow-before"></i><i class="arrow-after"></i>
+			<div class="arrowbox-main">
+				<p></p>
+			</div>
+		</div>
+		<div class="content">
+			<h3>Lipsum Lorem</h3>
+			<p>December 10, 2018</p>
+		</div>
+	</div>
+	<div>
+		<div class="arrowbox arrowbox-right">
+			<i class="arrow-before"></i><i class="arrow-after"></i>
+			<div class="arrowbox-main">
+				<p></p>
+			</div>
+		</div>
+		<div class="content">
+			<h3>Lipsum Lorem</h3>
+			<p>December 10, 2018</p>
+		</div>
+	</div>
+	<div>
+		<div class="arrowbox arrowbox-right">
+			<i class="arrow-before"></i><i class="arrow-after"></i>
+			<div class="arrowbox-main">
+				<p></p>
+			</div>
+		</div>
+		<div class="content">
+			<h3>Killzone: Shadow Fall…</h3>
+			<p>December 10, 2018</p>
+		</div>
+	</div>
+	<div>
+		<div class="arrowbox arrowbox-right">
+			<i class="arrow-before"></i><i class="arrow-after"></i>
+			<div class="arrowbox-main">
+				<p></p>
+			</div>
+		</div>
+		<div class="content">
+			<h3>Lipsum Lorem</h3>
+			<p>December 10, 2018</p>
+		</div>
+	</div>
+	<div>
+		<div class="arrowbox arrowbox-right">
+			<i class="arrow-before"></i><i class="arrow-after"></i>
+			<div class="arrowbox-main">
+				<p></p>
+			</div>
+		</div>
+		<div class="content">
+			<h3>Lipsum Lorem</h3>
+			<p>December 10, 2018</p>
+		</div>
+	</div><a class="more-link" href="#">More…</a>
+</div>
+
+
+
+
+
+			<br>
+			<img src="images/300x250.png" />
+		</aside>				
+		<div class="col-auto"></div>
+	</section>
+
+	<!-- Main Content -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-auto"></div>
+				<div class="col-lg-2"><img src="images/logo-live-gs.png" /></div>
+				<div class="col-lg-2"><p><span class="copyright">Copyright &copy; 2015-2020 RasterGames.</span> <br>All Rights Reserved.</p></div>
+				<div class="col-lg-4">
+					<ul class="right">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms and Conditions</a></li>
+						<li><a href="#">Developers</a></li>
+						<li><a href="#">Games for your site</a></li>
+					</ul>
+				</div>
+				<div class="col-auto"></div>
+			</div>			
+		</div>
+	</footer>
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+
+/* Menu */
+
+#menu {
+	background-color: rgba(8, 3, 37, 0.4);
+	position:absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+@media only screen and (max-width: 979px) {
+	#menu {
+		position: relative;
+	}
+}
+
+/* Main Header */
+#main-header {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	position: relative;
+	background: transparent;
+	height: 370px;
+}
+
+/* Slider */
+
+.crossfade > div.slide {
+  animation: imageAnimation 40s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 370px;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+	top: 0px;
+	width: 100%;
+  z-index: 0;
+}
+
+
+.crossfade  > div.slide:nth-child(1) { background-image: url('../images/slide1.jpg'); }
+
+.crossfade  > div.slide:nth-child(2) {
+  animation-delay: 8s;
+  background-image: url('../images/slide2.jpg');
+}
+
+.crossfade  > div.slide:nth-child(3) {
+  animation-delay: 16s;
+  background-image: url('../images/slide3.jpg');
+}
+
+.crossfade  > div.slide:nth-child(4) {
+  animation-delay: 24s;
+  background-image: url('../images/slide4.jpg');
+}
+
+.crossfade  > div.slide:nth-child(5) {
+  animation-delay: 32s;
+  background-image: url('../images/slide5.jpg');
+}
+
+ @keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+
+.crossfade div.row {
+	padding-top: 100px;
+}
+
+.crossfade h2 {
+	font-size: 5vw;
+	letter-spacing: 0px;	
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.75);
+}
+
+.crossfade p {
+	padding-left: 8px;
+  font-size: 1.8em;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.75);	
+}
+
+@media only screen and (max-width: 979px) {
+	#main-header,
+	.crossfade > div.slide {
+		height: 304px;
+	}	
+	.crossfade h2 {
+		padding-left: 5px;
+		font-size: 11vw;
+	}		
+}
+
+
+.progressbar {
+  width: 100%;
+  height: 3px;
+	background: rgba(0, 0, 0, 1.0);  
+	margin: 20px 8px;
+}
+
+.progress {
+  width: 0%;
+  background-color: #9c58cb;
+  height: 3px;
+	animation-name: progressBar;
+	animation-iteration-count: infinite;
+	animation-duration: 8s;
+	animation-delay: 1s;
+}
+
+.progress2 {
+	animation-delay: 9s;
+}
+
+.progress3 {
+	animation-delay: 17s;
+}
+
+.progress4 {
+	animation-delay: 25s;
+}
+
+.progress5 {
+	animation-delay: 33s;
+}
+
+
+@keyframes progressBar {
+  0% {
+    width: 10%;
+  }  
+  100% {
+    width: 100%;
+  }
+}

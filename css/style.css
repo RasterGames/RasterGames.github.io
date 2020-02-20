@@ -1,0 +1,483 @@
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000;
+  color: #979797;
+}
+
+body {
+  font-family: Lato,Helvetica,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+section.row {
+  margin: 0;
+}
+
+/*
+section div[class^="col-"] {
+  border: 1px solid #a9a9a9;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #dfe2e2;
+}
+*/
+
+header div[class^="col-"] {
+  border: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: none;
+}
+
+div[class^="col-auto"] {
+  /*background: lightblue;*/
+}
+
+.small {
+  font-size: 11px;
+}
+
+/* Ticker */
+
+#ticker {
+  background: #fff;
+}
+
+.ticker-item {
+  padding: 1.5rem 0;
+}
+
+.ticker-item:not(:first-child) {
+  border-left: 1px solid #000;
+}
+
+.ticker-item > .row {
+  margin: 0;
+}
+
+.ticker-item > .row > div {
+  padding: 5px;
+}
+
+.ticker-item > .row > div:first-child {
+  text-align: center;
+}
+
+.ticker-item img {
+  height: auto;
+}
+
+.ticker-item h3 {
+  color: #333447;
+  font-family: "WeblySleek UI Semibold", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+.ticker-item p {
+  color: dimgray;
+  line-height: 1.2em;
+  font-size: .9em;  
+}
+
+@media only screen and (max-width: 980px) {
+  .ticker-item:not(:first-child) {
+    border-left: none;
+  }  
+}
+
+/* Footer */
+
+footer {
+  min-height: 100px;
+  margin-top: 50px;
+}
+
+footer * {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #979797;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p {
+  padding: 5px;
+}
+
+footer ul.right {
+  padding-top: 5px;
+}
+
+footer ul.right li {
+  display: inline;
+  padding: 10px 5px;
+}
+
+.copyright {
+  color: #979797;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 320px) {
+
+  footer .row div {
+    width: 99%;
+    display: block;
+  }
+
+  footer ul.right {
+    text-align: left;
+  }
+
+  footer ul.right li {
+    display: block;
+  }
+
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  display: none;
+}
+
+nav ul.primary li:not(.mobile) {
+  display: list-item;
+}
+
+@media only screen and (max-width: 980px) {
+  nav ul.primary li:not(.mobile) {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    outline: none;
+    z-index: 2;
+  }
+
+  .hamburger-box {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+  }
+
+}
+
+
+
+
+/* Tabs */
+
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.tabs li {
+  background: none;
+  color: #979797;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+ul.tabs li:hover {
+  color: #fff;
+}
+
+ul.tabs li.current {
+  background-color: #9c58cb;
+  color: #fff;
+}
+
+ul.tabs li.current:after {
+  border: 6px solid #9c58cb;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  content: "";
+  bottom: -35px;
+  left: -50%;
+  z-index: 1;
+  position: relative;
+}
+
+.tab-content {
+  visibility: hidden;
+  height: 0px;
+  background: #000;
+  padding: 15px;
+  color: #979797;
+}
+
+.tab-content.current {
+  height: auto;
+  visibility: visible;
+}
+
+/* Showcase */
+
+.showcase h3 {
+  margin-top: 10px;
+  color: #fff;  
+  font-family: "WeblySleek UI Semibold", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2;
+  height: 50px;
+}
+
+.showcase p {
+  color: gray;
+  line-height: 1.2;
+  font-size: 1em;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 320px) {
+
+  .showcase h3,
+  .showcase p {
+    padding-top: 10px;
+    text-align: left;
+  }
+}
+
+/* Rating */
+
+.rating * {
+  color: #fff;
+}
+
+.rating {
+  font-family: "Montserrat", Arial, sans-serif;
+  position: relative;
+  font-size: 11px;
+  font-weight: 700;
+  top: -90px;
+  float: right;
+  margin-right: 5%;
+  clear: both;
+}
+
+.rating .pct {
+  color: #fff;
+  font-size: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .rating {
+    margin-right: 10%;
+  }
+}
+
+/* Main Content */
+
+#main {
+  padding-top: 20px;
+}
+
+img.thumb {
+  object-fit: cover;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+
+/* Arrow Box */
+
+#coming-soon .arrowbox-right {
+  left: 8%;
+  position: relative;
+  line-height: 20px;
+}    
+#coming-soon .arrowbox-right p {    
+  font-family: Lato,Helvetica,sans-serif;
+  font-size: 100%;
+  font-weight: 400;  
+}
+
+/* Reset CSS3 Counters */
+html {
+  counter-reset: comingsoon;
+}
+
+#coming-soon .arrowbox-right p:before {    
+content: counter(comingsoon);
+counter-increment: comingsoon;	 
+}
+.arrowbox {
+font-family: Lato, Helvetica, sans-serif;
+position: absolute;
+border: 1px solid #fff;
+background-color: #9C58CB;
+color: #fff;
+text-align: center;
+}
+
+.arrowbox-main {
+display: inline-block;
+font-size: 16px;
+padding: 0px;
+width: 20px;
+padding-bottom: 10px;
+}
+
+.arrowbox-main p {
+line-height: 0;
+padding: 0;
+margin: 0;
+
+}
+
+.arrow-before,
+.arrow-after {
+position: absolute;
+width: 0;
+height: 0;
+border: 5px dashed transparent;
+font-size: 0;
+}
+
+.arrow-after {
+border: 4px dashed transparent;
+}
+
+.arrowbox-right .arrow-before,
+.arrowbox-right .arrow-after {
+left: 100%;
+top: 50%;
+}
+
+.arrowbox-right .arrow-before {
+border-left-style: solid;
+border-left-color: #fff;
+margin-top: -5px;
+}
+
+.arrowbox-right .arrow-after {
+border-left-style: solid;
+border-left-color: #9C58CB;
+margin-top: -4px;
+}
+
+/* COMING SOON */
+
+#coming-soon {
+background-color: #9C58CB;
+min-height: 288px;
+height: auto;
+}
+
+#coming-soon > h3,
+#coming-soon p {
+color: #fff;
+}
+
+#coming-soon > h3 {
+text-align: center;
+}
+
+#coming-soon div > h3 {
+color: #000;
+padding: 0;
+/* counterbalance with before content */
+word-wrap: break-word;
+min-width: 200px;
+line-height: 1.2;
+}
+
+#coming-soon h3 {
+text-transform: uppercase;
+font-family: "Montserrat", Arial, sans-serif;
+font-size: .8em;
+padding: 12px;
+font-weight: bold;
+}
+
+#coming-soon > div {
+border-top: 1px solid #C196DE;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 60px;
+}
+
+#coming-soon .content {
+padding-left: 16%;
+}
+
+#coming-soon .arrow-box {
+left: 8%;
+}
+
+#coming-soon a.more-link {
+border-top: 1px solid #C196DE;
+color: #fff;
+text-decoration: none;
+display: block;
+padding: 15px;
+text-align: center;
+font-size: 1.1em;
+font-family: "Montserrat", Arial, sans-serif;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+#coming-soon a.more-link:hover {
+color: #000;
+}
+
+#coming-soon p {
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+font-size: 11px;
+}
+
+/* More */
+
+#more {
+  border: 1px solid #9C58CB;
+  min-height: 60px;
+}
+
+#more > div {
+  display: flex;
+  align-items: center;
+}
+
+#more > div:not(:last-child) {
+  border-right: 1px solid #9C58CB;  
+}
+
+#more h3 {
+  color: #ffffff;
+  line-height: 1;
+  font-size: 1em;
+  font-family: "WeblySleek UI Semibold", sans-serif;
+  height: 30px;
+  padding-left: 0px;
+}

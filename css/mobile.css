@@ -1,0 +1,28 @@
+/* Hamburger Menu */
+
+.hamburger {
+  display: none;
+}
+
+nav ul.primary li:not(.mobile) {
+  display: list-item;
+}
+
+@media only screen and (max-width: 960px) {
+  nav ul.primary li:not(.mobile) {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    outline: none;
+    z-index: 2;
+  }
+
+  .hamburger-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+}
